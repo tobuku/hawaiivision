@@ -45,7 +45,7 @@ header { background: #fff; position: sticky; top: 0; z-index: 1000; box-shadow: 
 
 .header-main { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; padding: .55rem 1.5rem 0; background: #fff; }
 .logo { display: flex; flex-direction: column; justify-content: center; flex: 1; order: 1; }
-.logo-name { display: block; width: 210px; height: 54px; background: #fff url('/images/HVA-logo-tight.png') no-repeat left center/contain; font-size: 0; color: transparent; line-height: 0; }
+.logo-name { display: block; width: 210px; height: 54px; background: #fff url('../images/HVA-logo-tight.png') no-repeat left center/contain; font-size: 0; color: transparent; line-height: 0; }
 .logo-tagline { display: none; }
 .logo:hover { text-decoration: none; }
 
@@ -70,7 +70,7 @@ nav { display: flex; align-items: center; gap: .15rem; order: 3; flex: 0 0 100%;
 .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
 
 /* ===== HERO ===== */
-.hero { background: url('/images/smiling-friends-mountaintop1302.jpg') right center/cover no-repeat; color: #fff; padding: 5.5rem 1.5rem; text-align: left; position: relative; overflow: hidden; min-height: 480px; display: flex; align-items: center; }
+.hero { background: url('../images/smiling-friends-mountaintop1302.jpg') right center/cover no-repeat; color: #fff; padding: 5.5rem 1.5rem; text-align: left; position: relative; overflow: hidden; min-height: 480px; display: flex; align-items: center; }
 .hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, rgba(20,24,48,0.88) 0%, rgba(20,24,48,0.72) 55%, rgba(20,24,48,0.20) 100%); }
 .hero-content { position: relative; max-width: 600px; }
 .hero h1 { font-size: 2.6rem; color: #fff; margin-bottom: .6rem; text-shadow: 0 2px 8px rgba(0,0,0,.4); line-height: 1.2; }
