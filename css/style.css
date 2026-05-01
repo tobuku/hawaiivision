@@ -44,9 +44,9 @@ header { background: var(--navy); position: sticky; top: 0; z-index: 1000; box-s
 .header-appointment:hover { background: var(--blue-light) !important; }
 
 .header-main { display: flex; align-items: center; justify-content: space-between; padding: .5rem 1.5rem; }
-.logo { display: flex; flex-direction: column; }
-.logo-name { color: #fff; font-size: 1.35rem; font-weight: 700; letter-spacing: .5px; line-height: 1.2; }
-.logo-tagline { color: rgba(255,255,255,.65); font-size: .72rem; letter-spacing: 1px; text-transform: uppercase; }
+.logo { display: flex; flex-direction: column; justify-content: center; }
+.logo-name { display: block; width: 196px; height: 50px; background: #fff url('/images/HVA-logo-tight.png') no-repeat center/contain; border-radius: 5px; padding: 3px 8px; font-size: 0; color: transparent; line-height: 0; }
+.logo-tagline { display: none; }
 .logo:hover { text-decoration: none; }
 
 /* ===== NAV ===== */
@@ -70,7 +70,7 @@ nav { display: flex; align-items: center; gap: .15rem; }
 .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
 
 /* ===== HERO ===== */
-.hero { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 50%, #1a4a7a 100%); color: #fff; padding: 5rem 1.5rem; text-align: center; position: relative; overflow: hidden; }
+.hero { background: linear-gradient(rgba(28,34,79,0.80), rgba(28,34,79,0.80)), url('/images/eye-equipment.jpg') center/cover no-repeat; color: #fff; padding: 5rem 1.5rem; text-align: center; position: relative; overflow: hidden; }
 .hero::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='20' cy='20' r='40' fill='rgba(255,255,255,.03)'/%3E%3Ccircle cx='80' cy='70' r='50' fill='rgba(255,255,255,.02)'/%3E%3C/svg%3E") center/cover; }
 .hero-content { position: relative; max-width: 780px; margin: 0 auto; }
 .hero h1 { font-size: 2.6rem; color: #fff; margin-bottom: 1rem; text-shadow: 0 2px 8px rgba(0,0,0,.3); }
@@ -149,10 +149,13 @@ main { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem; }
 
 /* ===== TESTIMONIALS ===== */
 .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); gap: 1.5rem; }
-.testimonial { background: var(--white); border-radius: 10px; border: 1px solid var(--gray-mid); box-shadow: 0 2px 8px rgba(0,0,0,.06); padding: 1.25rem; position: relative; }
+.testimonial { background: var(--white); border-radius: 10px; border: 1px solid var(--gray-mid); box-shadow: 0 2px 8px rgba(0,0,0,.06); padding: 1.25rem 1.25rem 1.25rem; position: relative; text-align: center; }
 .testimonial::before { content: '\201C'; font-size: 4rem; color: var(--blue); opacity: .2; position: absolute; top: -.5rem; left: .75rem; line-height: 1; }
-.testimonial p { font-size: .92rem; font-style: italic; color: var(--gray-text); padding-top: 1rem; }
-.testimonial cite { display: block; margin-top: .75rem; font-size: .82rem; font-weight: 600; color: var(--navy); font-style: normal; }
+.testimonial-photo { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 3px solid var(--blue); margin: 0 auto .75rem; display: block; }
+.testimonial p { font-size: .92rem; font-style: italic; color: var(--gray-text); padding-top: .25rem; text-align: left; }
+.testimonial cite { display: block; margin-top: .75rem; font-size: .82rem; font-weight: 600; color: var(--navy); font-style: normal; text-align: left; }
+/* Doctor group photo */
+.doctor-group-photo { width: 100%; border-radius: 12px; margin-bottom: 2rem; box-shadow: 0 4px 18px rgba(0,0,0,.15); }
 
 /* ===== CTA BANNER ===== */
 .cta-banner { background: linear-gradient(135deg, var(--navy), var(--navy-light)); color: #fff; text-align: center; padding: 3.5rem 1.5rem; }
